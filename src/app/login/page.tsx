@@ -64,9 +64,9 @@ export default function Login() {
 </div>
 
 
-                    <input className="emain" type="email"id="email"value={user.email}onChange={(e)=>setUser({...user,email:e.target.value})} />
+                    <input className="emain" type="email"id="email" placeholder="username" value={user.email}onChange={(e)=>setUser({...user,email:e.target.value})} />
 
-                  <input type="password"id="password"value={user.password}onChange={(e)=>setUser({...user,password:e.target.value})} className="pan" />
+                  <input type="password"id="password" placeholder="password" value={user.password}onChange={(e)=>setUser({...user,password:e.target.value})} className="pan" />
                     <div className="rem">
 
                         <Switch {...label} defaultChecked />
