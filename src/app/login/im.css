@@ -1,0 +1,237 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(255, 255, 255);
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+  
+  }
+  
+  #root {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .subn2 {
+    height: 700px;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  
+    margin:0px;
+  
+  }
+
+  .subn2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.4fr 0.6fr 1fr 1.9fr 0.1fr;
+    grid-template-rows: 0.1fr 2fr 1fr 2.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . ."
+      "partm partm partm partm partn partn partn ."
+      "partm partm partm partm partn partn partn ."
+      "partm partm partm partm partn partn partn ."
+      ". . . . . . . .";
+  }
+  
+  .partm {  display: grid;
+    grid-template-columns: 1.5fr 0.3fr 1.2fr 0.8fr 0.2fr 2fr 1fr;
+    grid-template-rows: 2.3fr 1.5fr 2.1fr 0.3fr 1fr 0.5fr 1.4fr 0.3fr 1.3fr 0.7fr 2fr 0.6fr 2.3fr 0.4fr 0.8fr 0.1fr 0.3fr 0.8fr 0.1fr 0.5fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo . . . . don don"
+      ". . . . . . ."
+      ". wel wel wel wel wel ."
+      ". . . . . . ."
+      ". pn pn pn pn pn ."
+      ". . . . . . ."
+      ". gon gon gon . fn ."
+      ". . . . . . ."
+      ". cont cont cont cont cont ."
+      ". . . . . . ."
+      ". emain emain emain emain emain ."
+      ". . . . . . ."
+      ". pan pan pan pan pan ."
+      ". . . . . . ."
+      ". rem rem . . rec ."
+      ". . . . . . ."
+      ". . . . . . ."
+      ". log log log log log ."
+      ". log log log log log ."
+      ". log log log log log ."
+      ". . . . . . .";
+    grid-area: partm;
+  }
+  
+  .logo { grid-area: logo; background-color:rgb(255, 255, 255) ;
+
+    background-image: url('Frame.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ margin-left: 60px;
+
+}
+  
+  .don { grid-area: don; ;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    color: black;
+    font-size: 15px;
+    
+
+
+}
+  
+  .wel { grid-area: wel;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;}
+  
+  .pn { grid-area: pn; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+    color: black;
+    font-size: 15px;
+   
+}
+  
+  .gon { grid-area: gon; 
+
+display: flex;
+color: black;
+gap: 5px;
+justify-content: center;
+align-items: center;
+height: 40px;
+width:100px;
+border-radius: 5px;
+border:2px solid rgb(153, 214, 153);
+margin-left:130px ;
+}
+.gi{
+    font-size: 30px;
+}
+.fi{font-size: 30px;
+    color: blue;
+}
+  
+  .fn { grid-area: fn; display: flex;
+    color: black;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width:120px;
+    border-radius: 5px;
+    border:2px solid rgb(237, 241, 237);
+   }
+  
+  
+  .cont { grid-area: cont; 
+    display: flex;
+   font-size: 13px;
+    align-content: center;
+   color: black;
+    justify-content: center;
+ 
+
+
+}
+  
+  .emain { grid-area: emain; background-color:rgb(246, 247, 245);
+padding: 10px;
+border-radius: 9px;
+border:2px solid rgb(220, 216, 216);
+color: black;
+
+}
+  
+  .pan { grid-area: pan; background-color:rgb(246, 247, 245);
+    padding: 10px;
+    border-radius: 9px;
+    border:2px solid rgb(220, 216, 216);
+  
+  color:black}
+  
+  .rem { grid-area: rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+  
+  .rec { grid-area: rec; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+  
+  .log { grid-area: log;background-color:rgb(21, 205, 104);
+
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding: 10px;
+    border-radius: 9px;
+    border:2px solid rgb(11, 168, 84);}
+  
+  .partn { grid-area: partn; background-color:rgb(255, 255, 255);
+
+  
+    display: flex;
+    
+    border-radius: 20px;
+margin-left: 100px;
+
+}
+.blon{
+  border-radius: 20px;
+}
+
+  .upn{
+
+
+    color:blue;
+    font-weight: bold;
+  }
+  .bbbn{
+    color:yellowgreen
+  }

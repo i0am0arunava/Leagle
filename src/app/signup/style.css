@@ -1,0 +1,231 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(233, 205, 216);
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+  
+  }
+  
+  #root {
+    background-color: aqua;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .subn1 {
+    height: 700px;
+    width: auto;
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  
+    margin:0px;
+  
+  }
+
+
+  .subn1 {  display: grid;
+    grid-template-columns: 0.1fr 1.9fr 1fr 0.6fr 1.4fr 1fr 1.9fr 0.1fr;
+    grid-template-rows: 0.1fr 2fr 1fr 2.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . ."
+      ". part9 part9 part9 part10 part10 part10 ."
+      ". part9 part9 part9 part10 part10 part10 ."
+      ". part9 part9 part9 part10 part10 part10 ."
+      ". . . . . . . .";
+  }
+  
+  .part9 { grid-area: part9;
+ 
+display: flex;
+
+border-radius: 20px;
+
+  }
+
+
+  .upm{
+
+
+    color:blue;
+    font-weight: bold;
+  }
+  .blog{
+    border-radius: 20px;
+  }
+  
+  .part10 {  display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 1.5fr 0.6fr 2.1fr 0.3fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr 1.2fr 1.6fr 0.8fr 1.7fr 0.4fr 1.1fr 1.1fr 2.2fr 0.9fr 0.6fr 0.2fr 0.2fr 1fr 0.6fr 1.8fr 0.6fr 1.7fr 0.3fr 1.8fr 0.2fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . ."
+      ". . . . t1 t1 t1 t1 t1"
+      ". . . . . . . . ."
+      ". . wel wel wel wel wel . ."
+      ". . . . . . . . ."
+      ". . . gog gog face . . ."
+      ". . . . . . . . ."
+      ". . cont cont cont cont cont . ."
+      ". . . . . . . . ."
+      ". . user user user user user . ."
+      ". . . . . . . . ."
+      ". . email email email email email . ."
+      ". . email email email email email . ."
+      ". . email email email email email . ."
+      ". . email email email email email . ."
+      ". . . . . . . . ."
+      ". . pass pass pass pass pass . ."
+      ". . . . . . . . ."
+      ". . conf conf conf conf conf . ."
+      ". . . . . . . . ."
+      ". . cre cre cre cre cre . ."
+      ". . . . . . . . ."
+      ". last last last last last last last ."
+      ". . . . . . . . .";
+    grid-area: part10;
+  }
+  
+  .t1 { grid-area: t1;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ color: black;
+ font-size: 17px;
+
+
+}
+  
+  .wel { grid-area: wel;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ color: black;
+ font-size: 20px;
+font-weight: bold;
+}
+.t2{
+    color: rgb(96, 93, 93);
+    font-size: 10px;
+}
+  
+  .gog { grid-area: gog; 
+
+
+    display: flex;
+    color: black;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width:100px;
+    border-radius: 5px;
+    border:2px solid rgb(153, 214, 153);
+    margin-left:40px ;
+
+
+}
+.gi{
+    font-size: 30px;
+}
+.fi{font-size: 30px;
+    color: blue;
+}
+  .face { grid-area: face; 
+display: flex;
+    color: black;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width:120px;
+    border-radius: 5px;
+    border:2px solid rgb(237, 241, 237);
+margin-left: 10px;
+
+}
+  
+  .cont { grid-area: cont; 
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    font-size: 10px;
+
+
+
+}
+  
+  .user { grid-area: user; background-color:rgb(246, 247, 245);
+    padding: 10px;
+    border-radius: 9px;
+    border:2px solid rgb(220, 216, 216);
+  color:black;
+  }
+  
+  .email { grid-area: email;background-color:rgb(246, 247, 245);  color:black;
+    padding: 10px;
+    border-radius: 9px;
+    border:2px solid rgb(220, 216, 216); }
+  
+  .pass { grid-area: pass;;background-color:rgb(246, 247, 245);  color:black;
+    padding: 10px;
+    border-radius: 9px;
+    border:2px solid rgb(220, 216, 216);}
+  
+  .conf { grid-area: conf;background-color:rgb(246, 247, 245);  color:black;
+    padding: 10px;
+    border-radius: 9px;
+    border:2px solid rgb(220, 216, 216); }
+  
+  .cre { grid-area: cre;background-color:rgb(21, 205, 104);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 10px;
+     border-radius: 9px;
+     border:2px solid rgb(11, 168, 84);}
+  
+  .last { grid-area: last; 
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+    color: black;
+    font-size: 12px;
+    
+  
+  
+  }
+  
